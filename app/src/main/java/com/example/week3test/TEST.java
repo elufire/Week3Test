@@ -103,7 +103,7 @@ public class TEST {
                         Room(false) }
         };
 
-        Room[][] backwardsL = new Room[][] {
+        Room[][] backwardsLTrue = new Room[][] {
                 {new Room(false), new Room(false), new Room(false), new Room(false), new
                         Room(false), new Room(false), new Room(false), new Room(false), new
                         Room(false) },
@@ -169,7 +169,7 @@ public class TEST {
                         Room(false) }
         };
 
-        Room[][] squareInfection = new Room[][] {
+        Room[][] tInfectionTrue = new Room[][] {
                 {new Room(false), new Room(false), new Room(false), new Room(false), new
                         Room(false), new Room(false), new Room(false), new Room(false), new
                         Room(false) },
@@ -204,12 +204,12 @@ public class TEST {
 
 
 
-        System.out.println(isOutbreak(verticalTrue));
-        System.out.println(isOutbreak(horizontalTrue));
-        System.out.println(isOutbreak(zigZagTrue));
-        System.out.println(isOutbreak(backwardsL));
-        System.out.println(isOutbreak(noInfection));
-        System.out.println(isOutbreak(squareInfection));
+        System.out.println("Vertical Outbreak: " + isOutbreak(verticalTrue));
+        System.out.println("Horizontal Outbreak: " + isOutbreak(horizontalTrue));
+        System.out.println("ZigZag Outbreak: " + isOutbreak(zigZagTrue));
+        System.out.println("Backwards L Outbreak: " + isOutbreak(backwardsLTrue));
+        System.out.println("No Infection: " + isOutbreak(noInfection));
+        System.out.println("T Outbreak: " + isOutbreak(tInfectionTrue));
     }
     public static boolean isOutbreak(Room[][] buildingTemp) {
         Room [] floor;
